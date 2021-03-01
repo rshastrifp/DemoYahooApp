@@ -11,7 +11,7 @@
 		61C51BE7231D19955979C5BC /* libPods-DemoWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0D1ADF3151F5C8F2F20D34 /* libPods-DemoWork.a */; };
 		DF2E2B7825ED9643003FFEC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E2B7725ED9643003FFEC0 /* AppDelegate.swift */; };
 		DF2E2B7A25ED9643003FFEC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E2B7925ED9643003FFEC0 /* SceneDelegate.swift */; };
-		DF2E2B7C25ED9643003FFEC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E2B7B25ED9643003FFEC0 /* ViewController.swift */; };
+		DF2E2B7C25ED9643003FFEC0 /* ChannelsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E2B7B25ED9643003FFEC0 /* ChannelsListViewController.swift */; };
 		DF2E2B7F25ED9643003FFEC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2E2B7D25ED9643003FFEC0 /* Main.storyboard */; };
 		DF2E2B8125ED9643003FFEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2E2B8025ED9643003FFEC0 /* Assets.xcassets */; };
 		DF2E2B8425ED9643003FFEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2E2B8225ED9643003FFEC0 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,8 @@
 		DF2E2B9A25ED9644003FFEC0 /* DemoWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E2B9925ED9644003FFEC0 /* DemoWorkUITests.swift */; };
 		DF2E2BCC25ED99B8003FFEC0 /* EnvironmentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E2BCB25ED99B8003FFEC0 /* EnvironmentConfig.swift */; };
 		DF3F3E7325EDA84D009F75E1 /* ChannelsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F3E7225EDA84D009F75E1 /* ChannelsListViewModel.swift */; };
+		DF3F3E8A25EDAA37009F75E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3F3E8925EDAA37009F75E1 /* Images.xcassets */; };
+		DF3F3E9025EDAA87009F75E1 /* VideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F3E8F25EDAA87009F75E1 /* VideosTableViewCell.swift */; };
 		DF5A61BE25EDA38B0017431E /* ChannelResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A61BD25EDA38B0017431E /* ChannelResponseModel.swift */; };
 		DFECFB8A25ED982200A5AF3E /* Apis.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFECFB8925ED982200A5AF3E /* Apis.plist */; };
 		DFECFB8C25ED987700A5AF3E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECFB8B25ED987700A5AF3E /* APIClient.swift */; };
@@ -53,7 +55,7 @@
 		DF2E2B7425ED9643003FFEC0 /* DemoWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2E2B7725ED9643003FFEC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2E2B7925ED9643003FFEC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF2E2B7B25ED9643003FFEC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF2E2B7B25ED9643003FFEC0 /* ChannelsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsListViewController.swift; sourceTree = "<group>"; };
 		DF2E2B7E25ED9643003FFEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF2E2B8025ED9643003FFEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2E2B8325ED9643003FFEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 		DF2E2B9B25ED9644003FFEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF2E2BCB25ED99B8003FFEC0 /* EnvironmentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfig.swift; sourceTree = "<group>"; };
 		DF3F3E7225EDA84D009F75E1 /* ChannelsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModel.swift; sourceTree = "<group>"; };
+		DF3F3E8925EDAA37009F75E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF3F3E8F25EDAA87009F75E1 /* VideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewCell.swift; sourceTree = "<group>"; };
 		DF5A61BD25EDA38B0017431E /* ChannelResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelResponseModel.swift; sourceTree = "<group>"; };
 		DFECFB8925ED982200A5AF3E /* Apis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Apis.plist; sourceTree = "<group>"; };
 		DFECFB8B25ED987700A5AF3E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -148,9 +152,11 @@
 			children = (
 				DF2E2B7725ED9643003FFEC0 /* AppDelegate.swift */,
 				DF2E2B7925ED9643003FFEC0 /* SceneDelegate.swift */,
+				DF3F3E8E25EDAA69009F75E1 /* TableViewCells */,
 				DF3F3E7125EDA82A009F75E1 /* ChannelList */,
 				DF2E2B7D25ED9643003FFEC0 /* Main.storyboard */,
 				DF2E2B8025ED9643003FFEC0 /* Assets.xcassets */,
+				DF3F3E8925EDAA37009F75E1 /* Images.xcassets */,
 				DF2E2B8225ED9643003FFEC0 /* LaunchScreen.storyboard */,
 				DF2E2B8525ED9643003FFEC0 /* Info.plist */,
 			);
@@ -178,10 +184,18 @@
 		DF3F3E7125EDA82A009F75E1 /* ChannelList */ = {
 			isa = PBXGroup;
 			children = (
-				DF2E2B7B25ED9643003FFEC0 /* ViewController.swift */,
+				DF2E2B7B25ED9643003FFEC0 /* ChannelsListViewController.swift */,
 				DF3F3E7225EDA84D009F75E1 /* ChannelsListViewModel.swift */,
 			);
 			path = ChannelList;
+			sourceTree = "<group>";
+		};
+		DF3F3E8E25EDAA69009F75E1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DF3F3E8F25EDAA87009F75E1 /* VideosTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		DF5A61BC25EDA2BF0017431E /* ResponseModels */ = {
@@ -335,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFECFB8A25ED982200A5AF3E /* Apis.plist in Resources */,
+				DF3F3E8A25EDAA37009F75E1 /* Images.xcassets in Resources */,
 				DF2E2B8425ED9643003FFEC0 /* LaunchScreen.storyboard in Resources */,
 				DF2E2B8125ED9643003FFEC0 /* Assets.xcassets in Resources */,
 				DF2E2B7F25ED9643003FFEC0 /* Main.storyboard in Resources */,
@@ -410,10 +425,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3F3E7325EDA84D009F75E1 /* ChannelsListViewModel.swift in Sources */,
-				DF2E2B7C25ED9643003FFEC0 /* ViewController.swift in Sources */,
+				DF2E2B7C25ED9643003FFEC0 /* ChannelsListViewController.swift in Sources */,
 				DF2E2B7825ED9643003FFEC0 /* AppDelegate.swift in Sources */,
 				DF2E2B7A25ED9643003FFEC0 /* SceneDelegate.swift in Sources */,
 				DF2E2BCC25ED99B8003FFEC0 /* EnvironmentConfig.swift in Sources */,
+				DF3F3E9025EDAA87009F75E1 /* VideosTableViewCell.swift in Sources */,
 				DFF9F6C125ED9EDE00CD855A /* ChannelsAPI.swift in Sources */,
 				DFECFB8C25ED987700A5AF3E /* APIClient.swift in Sources */,
 				DF5A61BE25EDA38B0017431E /* ChannelResponseModel.swift in Sources */,
