@@ -1,0 +1,8 @@
+
+target 'DemoWork' do
+    pod 'SwiftyJSON', '~> 4.0'
+end
+
+target 'DemoWorkTests' do
+  pod 'SwiftyJSON', '~> 4.0'
+end
