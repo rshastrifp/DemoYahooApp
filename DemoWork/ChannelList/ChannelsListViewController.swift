@@ -22,6 +22,9 @@ class ChannelsListViewController: GenericViewController, ViewControllerProtocol 
     func loadData() {
         viewModel.fetchChannels { (videos) in
             print(videos)
+            DispatchQueue.main.async {
+                self.tableViewChannels.reloadData()
+            }
         } failure: { (error) in
             print(error)
         }
@@ -36,7 +39,8 @@ extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "thumbCell", for: indexPath) as? VideosTableViewCell {
-            cell.configureCell()
+            let videoViewModel = self.viewModel.listVideos[indexPath.row]
+            cell.configureCell(videoViewModel: videoViewModel)
             return cell
         }
         return UITableViewCell()
