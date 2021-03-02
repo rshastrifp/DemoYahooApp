@@ -21,6 +21,7 @@
 		DF3F3E7325EDA84D009F75E1 /* ChannelsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F3E7225EDA84D009F75E1 /* ChannelsListViewModel.swift */; };
 		DF3F3E8A25EDAA37009F75E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3F3E8925EDAA37009F75E1 /* Images.xcassets */; };
 		DF3F3E9025EDAA87009F75E1 /* VideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F3E8F25EDAA87009F75E1 /* VideosTableViewCell.swift */; };
+		DF3F3E9825EDACA5009F75E1 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F3E9725EDACA5009F75E1 /* GenericViewController.swift */; };
 		DF5A61BE25EDA38B0017431E /* ChannelResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A61BD25EDA38B0017431E /* ChannelResponseModel.swift */; };
 		DFECFB8A25ED982200A5AF3E /* Apis.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFECFB8925ED982200A5AF3E /* Apis.plist */; };
 		DFECFB8C25ED987700A5AF3E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFECFB8B25ED987700A5AF3E /* APIClient.swift */; };
@@ -70,6 +71,7 @@
 		DF3F3E7225EDA84D009F75E1 /* ChannelsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModel.swift; sourceTree = "<group>"; };
 		DF3F3E8925EDAA37009F75E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF3F3E8F25EDAA87009F75E1 /* VideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewCell.swift; sourceTree = "<group>"; };
+		DF3F3E9725EDACA5009F75E1 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		DF5A61BD25EDA38B0017431E /* ChannelResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelResponseModel.swift; sourceTree = "<group>"; };
 		DFECFB8925ED982200A5AF3E /* Apis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Apis.plist; sourceTree = "<group>"; };
 		DFECFB8B25ED987700A5AF3E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				DF2E2B7725ED9643003FFEC0 /* AppDelegate.swift */,
 				DF2E2B7925ED9643003FFEC0 /* SceneDelegate.swift */,
+				DF3F3E9725EDACA5009F75E1 /* GenericViewController.swift */,
 				DF3F3E8E25EDAA69009F75E1 /* TableViewCells */,
 				DF3F3E7125EDA82A009F75E1 /* ChannelList */,
 				DF2E2B7D25ED9643003FFEC0 /* Main.storyboard */,
@@ -430,6 +433,7 @@
 				DF2E2B7A25ED9643003FFEC0 /* SceneDelegate.swift in Sources */,
 				DF2E2BCC25ED99B8003FFEC0 /* EnvironmentConfig.swift in Sources */,
 				DF3F3E9025EDAA87009F75E1 /* VideosTableViewCell.swift in Sources */,
+				DF3F3E9825EDACA5009F75E1 /* GenericViewController.swift in Sources */,
 				DFF9F6C125ED9EDE00CD855A /* ChannelsAPI.swift in Sources */,
 				DFECFB8C25ED987700A5AF3E /* APIClient.swift in Sources */,
 				DF5A61BE25EDA38B0017431E /* ChannelResponseModel.swift in Sources */,

@@ -7,19 +7,31 @@
 
 import UIKit
 
-class ChannelsListViewController: UIViewController {
+class ChannelsListViewController: GenericViewController, ViewControllerProtocol {
+    typealias ViewModelType = ChannelsListViewModel
     
     @IBOutlet weak var tableViewChannels: UITableView!
-
+    var viewModel = ViewModelType()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loadData()
+    }
+    
+    func loadData() {
+        viewModel.fetchChannels { (videos) in
+            print(videos)
+        } failure: { (error) in
+            print(error)
+        }
+
     }
 }
 
 extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.viewModel.listVideos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

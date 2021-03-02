@@ -24,7 +24,7 @@ class ApiClient {
         if !items.isEmpty {
             urlComp.queryItems = items
         }
-        var urlRequest = URLRequest(url: url)
+        var urlRequest = URLRequest(url: urlComp.url!)
         urlRequest.httpMethod = "GET"
         
         //Alamofire can also be used here for many advanced functions of web API.

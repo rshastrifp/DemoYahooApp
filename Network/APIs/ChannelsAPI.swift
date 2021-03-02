@@ -12,8 +12,8 @@ typealias SuccessResponseVideoList = (_ tsnResponseModel: [ChannelResponseModel]
 //dev_type=smartphone-app&video_uuid=eeaa1d1e-8840-39de-a488-ea444e7c832b&site=vsdk-demo-app&region=US&lang=en-US&image_sizes=640x360
 
 struct ChannelApiQuery {
-    let count: Int
-    let startAt: Int
+    var count: Int
+    var startAt: Int
 }
 
 class ChannelsApi: API {
@@ -48,7 +48,7 @@ class ChannelsApi: API {
         ApiClient().execute(api: self, params: self.queryParams, success: { (data) in
             let jsonData = JSON(data)
             var listAllVideos = [ChannelResponseModel]()
-            if let listVideosJson = jsonData["channel"]["result"]["videos"].array {
+            if let listVideosJson = jsonData["channel"]["result"][0]["videos"].array {
                 for videoJson in listVideosJson {
                     listAllVideos.append(ChannelResponseModel(json: videoJson))
                 }
