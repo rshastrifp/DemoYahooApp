@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class ChannelsListViewController: GenericViewController, ViewControllerProtocol {
     typealias ViewModelType = ChannelsListViewModel
@@ -30,6 +31,27 @@ class ChannelsListViewController: GenericViewController, ViewControllerProtocol 
         }
 
     }
+    
+    func getDetailsOFChannel(id: String) {
+        //Spinner here.
+        // Plus lock user interation with spinner.
+        viewModel.fetchChannelDetails(channelId: id) { (channels) in
+            if let channel = channels.first,
+               let urlStr = channel.videoUrl,
+               let url = URL(string: urlStr) {
+                let player = AVPlayer(url: url)
+                DispatchQueue.main.async {
+                    let playerViewController = AVPlayerViewController()
+                    playerViewController.player = player
+                    self.present(playerViewController, animated: true) {
+                        playerViewController.player!.play()
+                    }
+                }
+            }
+        } failure: { (error) in
+            print(error)
+        }
+    }
 }
 
 extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -44,6 +66,11 @@ extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let channelId = viewModel.listVideos[indexPath.row].id
+        getDetailsOFChannel(id: channelId)
     }
 }
 

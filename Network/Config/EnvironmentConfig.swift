@@ -10,6 +10,7 @@ import Foundation
 struct EnvironmentConfig {
     struct pathKey {
         static var channelList: String {return "channels"}
+        static var channelDetails: String {return "channelDetails"}
     }
     
     static var YahooApiList:[String: String] {

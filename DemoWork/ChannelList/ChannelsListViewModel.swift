@@ -12,7 +12,7 @@ typealias SuccessViewModel = (_ vanues: [VideoViewModel]) -> Void
 struct VideoViewModel {
     var id: String
     var thumImageUrl: String
-    var videoUrl: Int?
+    var videoUrl: String?
 }
 
 class ChannelsListViewModel {
@@ -33,6 +33,19 @@ class ChannelsListViewModel {
         }
     }
     
+    func fetchChannelDetails(channelId: String, success: @escaping SuccessViewModel, failure: @escaping Failure) {
+        ChannelDetailsApi(channleId: channelId).fetchData(){ [weak self] (channel) in
+            guard let strongSelf = self else { return }
+            if let index = strongSelf.findVideoIndexFor(id: channel.id) {
+                strongSelf.listVideos[index].videoUrl = channel.videoUrl
+                success([strongSelf.listVideos[index]])
+            }
+        } failure: { (error) in
+            print(error)
+            failure(error)
+        }
+    }
+    
     func getVideoViewModelObject(_ channelResponseModel: ChannelResponseModel) -> VideoViewModel {
         return VideoViewModel(id: channelResponseModel.id,
                               thumImageUrl: channelResponseModel.thumbUrl,
@@ -41,5 +54,14 @@ class ChannelsListViewModel {
     
     func updateQueryCount() {
         currentQuesryValues.startAt += currentQuesryValues.count
+    }
+    
+    func findVideoIndexFor(id: String) -> Int? {
+        for (index,item) in listVideos.enumerated() {
+            if (item.id == id) {
+                return index
+            }
+        }
+        return nil
     }
 }

@@ -32,9 +32,14 @@ class API {
         case image_sizes
         case count
         case start
+        case format
+        case vpa
+        case protocolString
+        case rt
+        case pver
     }
     
     enum PathParamsStrings: String {
-        case vanueId = "{{vanue_id}}"
+        case videoId = "{_VIDEO_ID_}"
     }
 }

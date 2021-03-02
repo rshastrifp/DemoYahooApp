@@ -4,5 +4,7 @@
 <dict>
 	<key>channels</key>
 	<string>video/alias/channels/wf-channel=related-videos</string>
+	<key>channelDetails</key>
+	<string>video/sapi/streams/{_VIDEO_ID_}</string>
 </dict>
 </plist>
